@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #004a70;
+  display: flex;
+  height: 4rem;
+  white-space: nowrap;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0 24px;
+  color: #fff;
+}
+
+main {
+  padding: 24px;
+}
+
+table {
+  margin-top: 24px;
+  border: solid 1px lightgray;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table thead th {
+  border: solid 1px lightgray;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+table tbody td {
+  border: solid 1px lightgray;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  min-width: 200px;
+}
+
+table tbody td.buttons {
+  width: 132px;
+  min-width: 132px;
+}
+
+table button {
+  margin-left: 6px;
+}
+
+button {
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 0.25rem;
+}
+
+button {
+  border-color: #0079b8;
+  background-color: #0079b8;
+  color: #fff;
+  border: 1px solid #0079b8;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #004a6e;
+}
+
+button[del-js] {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+button[del-js]:hover {
+  background-color: #c82333;
+}

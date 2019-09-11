@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contacts</h1>
+    </header>
+    <main>
+      <button data-js="add">Add Contact</button>
+
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button" data-js="close">&times;</span>
+        <h2 class="modal-header">Contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label> <input type="text" data-js="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="mail">E-mail</label> <input type="text" data-js="mail" id="mail" />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone</label> <input type="text" data-js="phone" id="phone" />
+          </div>
+          <button data-js="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
